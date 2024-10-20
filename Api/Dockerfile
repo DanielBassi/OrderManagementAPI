@@ -7,6 +7,7 @@ COPY ["Api/Api.csproj", "Api/"]
 COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
 RUN dotnet restore "Api/Api.csproj"
 
+
 # Copy everything else and build
 COPY . .
 WORKDIR "/src/Api"
